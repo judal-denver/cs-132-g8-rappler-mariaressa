@@ -1,0 +1,20 @@
+.d-flex {
+    display: flex;
+}
+
+.image.featured {
+    aspect-ratio: 16/1;
+    overflow: hidden;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-indent-50 {
+    text-indent: 50px;
+}
+
+.margin-bottom-1em {
+    margin-bottom: 0.25em;
+}
