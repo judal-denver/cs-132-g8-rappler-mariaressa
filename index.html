@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="assets/css/custom.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
 	<!-- Plotly JS -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
@@ -36,16 +38,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-4 col-5-large col-12-medium">
-					<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
+					<span class="image fit"><img src="images/team-logo.png" alt="" /></span>
 				</div>
 				<div class="col-8 col-7-large col-12-medium">
 					<header>
-						<h1>Hi. We are <strong>Group Name</strong>.</h1>
+						<h1>Hi. We are the <strong class="line-height-1em">Knowledge-Driven Ruminators</strong>.</h1>
 					</header>
-					<p>And this is our project, <strong>Project Title</strong>, <em>a short explanation of the project
-							objectives</em>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>And this is our project, <strong>FACT CHECK: A Time-series Analysis on Misinformation Allegations Against Maria Ressa and Rappler During the Duterte Administration</strong>, a study to see if allegations of misinformation against Maria Ressa and Rappler rose during Duterte's administration, along with event-detection to discover underlying events that might have caused it.</p>
 					<p>Data Science Team</p>
 					<ul style="list-style-type:none; margin-top:-30px;">
 						<li>Samuel Kirby Aguilar, WFW</li>
@@ -98,7 +97,7 @@
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon featured fa-thumbs-up"></span>
+						<!-- <span class="icon featured fa-thumbs-up"></span> -->
 						<h3>Hypothesis</h3>
 						<p>The duration of the Duterte administration significantly increased the volume of fake news
 							tweets regarding Rappler and Maria Ressa peddling fake news and disinformation.</p>
@@ -106,7 +105,7 @@
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon featured fa-thumbs-down"></span>
+						<!-- <span class="icon featured fa-thumbs-down"></span> -->
 						<h3>Null Hypothesis</h3>
 						<p>The duration of the Duterte administration did not show a significant change in the volume of
 							fake news tweets regarding Rappler and Maria Ressa peddling fake news and disinformation.
@@ -114,9 +113,9 @@
 					</section>
 				</div>
 			</div>
-			<footer>
+			<!-- <footer>
 				<a href="#portfolio" class="button large scrolly">Let's take a look at our data</a>
-			</footer>
+			</footer> -->
 		</div>
 	</article>
 
@@ -447,6 +446,20 @@
 						</ul>
 					</article>
 				</div>
+				<div class="col-12">
+					<article class="box style2 text-align-left">
+						<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+						<h3><a href="#">Data Modelling</a></h3>
+						<br>
+						<p>
+							Since we wanted to do time series analysis with our data, we opted in using event detection models, specifically Peak Finding
+							and Change Point Detection. Peak Finding helped us identify events which could have caused spikes in the misinformation/disinformation
+							tweets. Change Point Detection on the other hand divides our data into segments, indicating a sudden change in the rate of data.
+							Afterwards, Linear Regression is then used on each segment divided by the change points, to check for rising trends in
+							misinformation/disinformation tweets.
+						</p>
+					</article>
+				</div>
 			</div>
 			<!-- <footer>
 				<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
@@ -459,92 +472,173 @@
 		<div class="container">
 			<header>
 				<h2>Here's what we found out.</h2>
-				<p>Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.</p>
 			</header>
 			<div class="row">
-				<div class="col-6 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+				<div class="col-12">
+					<article class="box style2 text-align-left">
+						<a href="#" class="image featured"><img src="images/pic00.jpg" alt="" /></a>
 						<h3><a href="#">Results</a></h3>
-						<p>Ornare nulla proin odio consequat.</p>
+						<br>
+						<h4><a href="#">Peak Events Detection</a></h4>
+						<div>
+							<div>
+								<div id="e974df7b-3fbe-4e44-88f7-29d789084965" class="plotly-graph-div" style="height:600px; width:100%;"></div>
+								<script type="text/javascript">
+									window.PLOTLYENV = window.PLOTLYENV || {}; if (document.getElementById("e974df7b-3fbe-4e44-88f7-29d789084965")) { Plotly.newPlot("e974df7b-3fbe-4e44-88f7-29d789084965", [{ "hovertext": ["2017-01-31", "2017-02-28", "2017-03-31", "2017-04-30", "2017-05-31", "2017-06-30", "2017-07-31", "2017-08-31", "2017-09-30", "2017-10-31", "2017-11-30", "2017-12-31", "2018-01-31", "2018-02-28", "2018-03-31", "2018-04-30", "2018-05-31", "2018-06-30", "2018-07-31", "2018-08-31", "2018-09-30", "2018-10-31", "2018-11-30", "2018-12-31", "2019-01-31", "2019-02-28", "2019-03-31", "2019-04-30", "2019-05-31", "2019-06-30", "2019-07-31", "2019-08-31", "2019-09-30", "2019-10-31", "2019-11-30", "2019-12-31", "2020-01-31", "2020-02-29", "2020-03-31", "2020-04-30", "2020-05-31", "2020-06-30", "2020-07-31", "2020-08-31", "2020-09-30", "2020-10-31", "2020-11-30", "2020-12-31", "2021-01-31", "2021-02-28", "2021-03-31", "2021-04-30", "2021-05-31", "2021-06-30", "2021-07-31", "2021-08-31", "2021-09-30", "2021-10-31", "2021-11-30", "2021-12-31", "2022-01-31", "2022-02-28", "2022-03-31", "2022-04-30", "2022-05-31", "2022-06-30", "2022-07-31", "2022-08-31", "2022-09-30", "2022-10-31", "2022-11-30", "2022-12-31"], "mode": "lines", "name": "Original Data", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71], "y": [1, 0, 2, 0, 2, 3, 1, 2, 2, 4, 2, 2, 31, 30, 7, 13, 2, 3, 4, 2, 3, 7, 2, 5, 1, 11, 4, 5, 2, 2, 2, 2, 1, 1, 7, 5, 3, 2, 4, 9, 11, 13, 7, 15, 9, 4, 4, 4, 2, 2, 2, 3, 1, 2, 3, 1, 2, 27, 13, 7, 11, 5, 9, 5, 3, 19, 12, 4, 1, 5, 2, 3], "type": "scatter" }, { "hovertext": ["2018-01-31", "2019-02-28", "2020-08-31", "2021-10-31", "2022-06-30"], "marker": { "color": "red", "size": 8, "symbol": "x" }, "mode": "markers", "name": "Peaks", "x": [12, 25, 43, 57, 65], "y": [31, 11, 15, 27, 19], "type": "scatter" }], { "height": 600, "template": { "data": { "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 }, "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 } }, "type": "barpolar" }], "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 }, "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 } }, "type": "bar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram": [{ "marker": { "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 } }, "type": "histogram" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatter": [{ "fillpattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 }, "type": "scatter" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "autotypenumbers": "strict", "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "text": "Misinformation Allegations Against Rappler and Maria Ressa Peak Events" }, "xaxis": { "tickmode": "array", "ticktext": ["2017-01-31", "2017-08-31", "2018-03-31", "2018-10-31", "2019-05-31", "2019-12-31", "2020-07-31", "2021-02-28", "2021-09-30", "2022-04-30"], "tickvals": [0, 7, 14, 21, 28, 35, 42, 49, 56, 63], "title": { "text": "Time" } }, "yaxis": { "title": { "text": "Value" } } }, { "responsive": true }) };
+								</script>
+							</div>
+						</div>
+						<p>
+							The first peak, which is also the most prominent peak, was in the month of January 2018, 
+							which coincided with Rappler's license to operate being revoked by the SEC under Duterte on the grounds of foreign ownership. 
+							Duterte denies any supposed influence on the SEC for this decision but still branded Rappler as a "fake news outlet".
+							<a href="#references">[1]</a>
+						</p>
+						<p>
+							The second peak, which is the lowest peak, can be observed on February 2019, when Maria Ressa was arrested by 
+							the National Bureau of Investigation (NBI) on the charge of "cyber-libel".
+							<a href="#references">[2]</a>
+						</p>
+						<p>
+							The next one, the fourth highest peak, occurred in August 2020, which coincided with the release of 
+							"A Thousand Cuts", a documentary that follows Maria Ressa's arduous journey during the Duterte administration, 
+							facing multiple lawsuits, online harassment, and real-world threats for reporting extrajudicial killings.
+							<a href="#references">[3]</a>
+						</p>
+						<p>
+							The fourth one, also the second most prominent peak, was in the month of October 2021, which coincided with Maria 
+							Ressa's awarding of the Nobel Peace Prize.
+							<a href="#references">[4]</a>
+						</p>
+						<p>
+							Finally, the last peak, which is the third highest peak, was in June 2022. This coincided with Maria Ressa 
+							stating that the Philippine government ordered Rappler to be shut down as the SEC reaffirmed its past ruling 
+							to revoke Rappler's registration due to alleged foreign ownership violations.
+							<a href="#references">[5]</a>
+						</p>
+						<h4><a href="#">Change Event Detection</a></h4>
+						<div>
+							<div>
+								<div id="453849d9-583d-4085-8f34-dfae08422682" class="plotly-graph-div" style="height:600px; width:100%;"></div>
+								<script type="text/javascript">
+									window.PLOTLYENV = window.PLOTLYENV || {}; if (document.getElementById("453849d9-583d-4085-8f34-dfae08422682")) { Plotly.newPlot("453849d9-583d-4085-8f34-dfae08422682", [{ "hovertext": ["2017-01-31", "2017-02-28", "2017-03-31", "2017-04-30", "2017-05-31", "2017-06-30", "2017-07-31", "2017-08-31", "2017-09-30", "2017-10-31", "2017-11-30", "2017-12-31", "2018-01-31", "2018-02-28", "2018-03-31", "2018-04-30", "2018-05-31", "2018-06-30", "2018-07-31", "2018-08-31", "2018-09-30", "2018-10-31", "2018-11-30", "2018-12-31", "2019-01-31", "2019-02-28", "2019-03-31", "2019-04-30", "2019-05-31", "2019-06-30", "2019-07-31", "2019-08-31", "2019-09-30", "2019-10-31", "2019-11-30", "2019-12-31", "2020-01-31", "2020-02-29", "2020-03-31", "2020-04-30", "2020-05-31", "2020-06-30", "2020-07-31", "2020-08-31", "2020-09-30", "2020-10-31", "2020-11-30", "2020-12-31", "2021-01-31", "2021-02-28", "2021-03-31", "2021-04-30", "2021-05-31", "2021-06-30", "2021-07-31", "2021-08-31", "2021-09-30", "2021-10-31", "2021-11-30", "2021-12-31", "2022-01-31", "2022-02-28", "2022-03-31", "2022-04-30", "2022-05-31", "2022-06-30", "2022-07-31", "2022-08-31", "2022-09-30", "2022-10-31", "2022-11-30", "2022-12-31"], "mode": "lines", "name": "Original Data", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71], "y": [1, 0, 2, 0, 2, 3, 1, 2, 2, 4, 2, 2, 31, 30, 7, 13, 2, 3, 4, 2, 3, 7, 2, 5, 1, 11, 4, 5, 2, 2, 2, 2, 1, 1, 7, 5, 3, 2, 4, 9, 11, 13, 7, 15, 9, 4, 4, 4, 2, 2, 2, 3, 1, 2, 3, 1, 2, 27, 13, 7, 11, 5, 9, 5, 3, 19, 12, 4, 1, 5, 2, 3], "type": "scatter" }, { "hovertext": ["2018-01-31", "2019-02-28", "2020-08-31", "2021-10-31", "2022-06-30"], "marker": { "color": "red", "size": 8, "symbol": "x" }, "mode": "markers", "name": "Peaks", "x": [12, 25, 43, 57, 65], "y": [31, 11, 15, 27, 19], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2017-06-30", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2017-06-30", "x": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2017-11-30", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2017-11-30", "x": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2018-04-30", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2018-04-30", "x": [15, 15, 15, 15, 15, 15, 15, 15, 15, 15], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2020-05-31", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2020-05-31", "x": [40, 40, 40, 40, 40, 40, 40, 40, 40, 40], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2020-10-31", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2020-10-31", "x": [45, 45, 45, 45, 45, 45, 45, 45, 45, 45], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2021-08-31", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2021-08-31", "x": [55, 55, 55, 55, 55, 55, 55, 55, 55, 55], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2022-01-31", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2022-01-31", "x": [60, 60, 60, 60, 60, 60, 60, 60, 60, 60], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2022-11-30", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2022-11-30", "x": [70, 70, 70, 70, 70, 70, 70, 70, 70, 70], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }], { "height": 600, "template": { "data": { "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 }, "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 } }, "type": "barpolar" }], "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 }, "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 } }, "type": "bar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram": [{ "marker": { "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 } }, "type": "histogram" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatter": [{ "fillpattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 }, "type": "scatter" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "autotypenumbers": "strict", "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "text": "Misinformation Allegations Against Rappler and Maria Ressa Change Points and Peaks" }, "xaxis": { "tickmode": "array", "ticktext": ["2017-01-31", "2017-08-31", "2018-03-31", "2018-10-31", "2019-05-31", "2019-12-31", "2020-07-31", "2021-02-28", "2021-09-30", "2022-04-30"], "tickvals": [0, 7, 14, 21, 28, 35, 42, 49, 56, 63], "title": { "text": "Time" } }, "yaxis": { "range": [0, 40], "title": { "text": "Value" } } }, { "responsive": true }) };
+								</script>
+							</div>
+						</div>
+						<p>
+							For this, we used the Pelt algorithm with a penalty value of 0.5. 
+						</p>
+						<h4><a href="#">Segmented Linear Regression</a></h4>
+						<div>
+							<div>
+								<div id="a4f3ded5-9440-4a17-9897-bac1132ad7c8" class="plotly-graph-div" style="height:600px; width:100%;"></div>
+								<script type="text/javascript">
+									window.PLOTLYENV = window.PLOTLYENV || {}; if (document.getElementById("a4f3ded5-9440-4a17-9897-bac1132ad7c8")) { Plotly.newPlot("a4f3ded5-9440-4a17-9897-bac1132ad7c8", [{ "hovertext": ["2017-01-31", "2017-02-28", "2017-03-31", "2017-04-30", "2017-05-31", "2017-06-30", "2017-07-31", "2017-08-31", "2017-09-30", "2017-10-31", "2017-11-30", "2017-12-31", "2018-01-31", "2018-02-28", "2018-03-31", "2018-04-30", "2018-05-31", "2018-06-30", "2018-07-31", "2018-08-31", "2018-09-30", "2018-10-31", "2018-11-30", "2018-12-31", "2019-01-31", "2019-02-28", "2019-03-31", "2019-04-30", "2019-05-31", "2019-06-30", "2019-07-31", "2019-08-31", "2019-09-30", "2019-10-31", "2019-11-30", "2019-12-31", "2020-01-31", "2020-02-29", "2020-03-31", "2020-04-30", "2020-05-31", "2020-06-30", "2020-07-31", "2020-08-31", "2020-09-30", "2020-10-31", "2020-11-30", "2020-12-31", "2021-01-31", "2021-02-28", "2021-03-31", "2021-04-30", "2021-05-31", "2021-06-30", "2021-07-31", "2021-08-31", "2021-09-30", "2021-10-31", "2021-11-30", "2021-12-31", "2022-01-31", "2022-02-28", "2022-03-31", "2022-04-30", "2022-05-31", "2022-06-30", "2022-07-31", "2022-08-31", "2022-09-30", "2022-10-31", "2022-11-30", "2022-12-31"], "mode": "lines", "name": "Original Data", "x": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71], "y": [1, 0, 2, 0, 2, 3, 1, 2, 2, 4, 2, 2, 31, 30, 7, 13, 2, 3, 4, 2, 3, 7, 2, 5, 1, 11, 4, 5, 2, 2, 2, 2, 1, 1, 7, 5, 3, 2, 4, 9, 11, 13, 7, 15, 9, 4, 4, 4, 2, 2, 2, 3, 1, 2, 3, 1, 2, 27, 13, 7, 11, 5, 9, 5, 3, 19, 12, 4, 1, 5, 2, 3], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2017-06-30", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2017-06-30", "x": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2017-11-30", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2017-11-30", "x": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2018-04-30", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2018-04-30", "x": [15, 15, 15, 15, 15, 15, 15, 15, 15, 15], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2020-05-31", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2020-05-31", "x": [40, 40, 40, 40, 40, 40, 40, 40, 40, 40], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2020-10-31", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2020-10-31", "x": [45, 45, 45, 45, 45, 45, 45, 45, 45, 45], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2021-08-31", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2021-08-31", "x": [55, 55, 55, 55, 55, 55, 55, 55, 55, 55], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2022-01-31", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2022-01-31", "x": [60, 60, 60, 60, 60, 60, 60, 60, 60, 60], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "hoverinfo": "text", "hovertext": "Change at<br>2022-11-30", "line": { "color": "red", "dash": "dash", "width": 1 }, "mode": "lines", "name": "2022-11-30", "x": [70, 70, 70, 70, 70, 70, 70, 70, 70, 70], "y": [-100000.0, 0, 200000.0, 400000.0, 500000.0, 600000.0, 800000.0, 1000000.0, 1200000.0, 1300000.0], "type": "scatter" }, { "line": { "color": "red", "width": 2 }, "mode": "lines", "name": "Segment 5-10", "x": [5, 6, 7, 8, 9, 10], "y": [2.047619047619048, 2.161904761904762, 2.2761904761904765, 2.390476190476191, 2.504761904761905, 2.6190476190476195], "type": "scatter" }, { "line": { "color": "red", "width": 2 }, "mode": "lines", "name": "Segment 10-15", "x": [10, 11, 12, 13, 14, 15], "y": [9.238095238095237, 11.209523809523809, 13.18095238095238, 15.152380952380952, 17.123809523809523, 19.095238095238095], "type": "scatter" }, { "line": { "color": "red", "width": 2 }, "mode": "lines", "name": "Segment 15-40", "x": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40], "y": [4.145299145299146, 4.161367521367522, 4.177435897435898, 4.193504273504273, 4.2095726495726495, 4.225641025641026, 4.241709401709402, 4.257777777777778, 4.273846153846154, 4.28991452991453, 4.305982905982906, 4.322051282051282, 4.338119658119658, 4.354188034188034, 4.3702564102564105, 4.386324786324786, 4.402393162393162, 4.418461538461538, 4.434529914529914, 4.450598290598291, 4.466666666666667, 4.482735042735042, 4.498803418803418, 4.5148717948717945, 4.530940170940171, 4.547008547008547], "type": "scatter" }, { "line": { "color": "red", "width": 2 }, "mode": "lines", "name": "Segment 40-45", "x": [40, 41, 42, 43, 44, 45], "y": [12.61904761904762, 11.504761904761907, 10.390476190476193, 9.276190476190477, 8.161904761904763, 7.047619047619049], "type": "scatter" }, { "line": { "color": "red", "width": 2 }, "mode": "lines", "name": "Segment 45-55", "x": [45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55], "y": [3.7272727272727275, 3.490909090909091, 3.254545454545455, 3.018181818181818, 2.7818181818181817, 2.5454545454545454, 2.3090909090909086, 2.0727272727272723, 1.836363636363636, 1.5999999999999996, 1.3636363636363633], "type": "scatter" }, { "line": { "color": "red", "width": 2 }, "mode": "lines", "name": "Segment 55-60", "x": [55, 56, 57, 58, 59, 60], "y": [6.523809523809524, 7.980952380952381, 9.438095238095237, 10.895238095238094, 12.352380952380951, 13.809523809523808], "type": "scatter" }, { "line": { "color": "red", "width": 2 }, "mode": "lines", "name": "Segment 60-70", "x": [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70], "y": [9.727272727272728, 9.163636363636364, 8.600000000000001, 8.036363636363637, 7.472727272727273, 6.909090909090908, 6.345454545454545, 5.781818181818181, 5.218181818181817, 4.6545454545454525, 4.090909090909089], "type": "scatter" }, { "line": { "color": "red", "width": 2 }, "mode": "lines", "name": "Segment 70-72", "x": [70, 71], "y": [2.0, 3.0], "type": "scatter" }], { "height": 600, "template": { "data": { "barpolar": [{ "marker": { "line": { "color": "#E5ECF6", "width": 0.5 }, "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 } }, "type": "barpolar" }], "bar": [{ "error_x": { "color": "#2a3f5f" }, "error_y": { "color": "#2a3f5f" }, "marker": { "line": { "color": "#E5ECF6", "width": 0.5 }, "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 } }, "type": "bar" }], "carpet": [{ "aaxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "baxis": { "endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f" }, "type": "carpet" }], "choropleth": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "choropleth" }], "contourcarpet": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "contourcarpet" }], "contour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour" }], "heatmapgl": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl" }], "heatmap": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap" }], "histogram2dcontour": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour" }], "histogram2d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d" }], "histogram": [{ "marker": { "pattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 } }, "type": "histogram" }], "mesh3d": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "type": "mesh3d" }], "parcoords": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "parcoords" }], "pie": [{ "automargin": true, "type": "pie" }], "scatter3d": [{ "line": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatter3d" }], "scattercarpet": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattercarpet" }], "scattergeo": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergeo" }], "scattergl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattergl" }], "scattermapbox": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scattermapbox" }], "scatterpolargl": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolargl" }], "scatterpolar": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterpolar" }], "scatter": [{ "fillpattern": { "fillmode": "overlay", "size": 10, "solidity": 0.2 }, "type": "scatter" }], "scatterternary": [{ "marker": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "type": "scatterternary" }], "surface": [{ "colorbar": { "outlinewidth": 0, "ticks": "" }, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface" }], "table": [{ "cells": { "fill": { "color": "#EBF0F8" }, "line": { "color": "white" } }, "header": { "fill": { "color": "#C8D4E3" }, "line": { "color": "white" } }, "type": "table" }] }, "layout": { "annotationdefaults": { "arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1 }, "autotypenumbers": "strict", "coloraxis": { "colorbar": { "outlinewidth": 0, "ticks": "" } }, "colorscale": { "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]] }, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": { "color": "#2a3f5f" }, "geo": { "bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white" }, "hoverlabel": { "align": "left" }, "hovermode": "closest", "mapbox": { "style": "light" }, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": { "angularaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "radialaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "scene": { "xaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "yaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" }, "zaxis": { "backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white" } }, "shapedefaults": { "line": { "color": "#2a3f5f" } }, "ternary": { "aaxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "baxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" }, "bgcolor": "#E5ECF6", "caxis": { "gridcolor": "white", "linecolor": "white", "ticks": "" } }, "title": { "x": 0.05 }, "xaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 }, "yaxis": { "automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": { "standoff": 15 }, "zerolinecolor": "white", "zerolinewidth": 2 } } }, "title": { "text": "Misinformation Allegations Against Rappler Change Points and Segmented Regression" }, "xaxis": { "tickmode": "array", "ticktext": ["2017-01-31", "2017-08-31", "2018-03-31", "2018-10-31", "2019-05-31", "2019-12-31", "2020-07-31", "2021-02-28", "2021-09-30", "2022-04-30"], "tickvals": [0, 7, 14, 21, 28, 35, 42, 49, 56, 63], "title": { "text": "Time" } }, "yaxis": { "range": [0, 40], "title": { "text": "Number of Tweets" } } }, { "responsive": true }) };
+								</script>
+							</div>
+						</div>
+						<p id="references">
+							The resulting segments only had p-values of 0.69390663, 0.59434816, 0.85960319, 0.29198456,
+							0.01762843, 0.58207428, and 0.29282681, respectively, given a confidence level of p &lt 0.05. This means that the segments are not a good fit
+							to the data it is trying to regress. Therefore, we cannot establish correlation between the rise or fall
+							in the number of tweets, and the peak event assosciated with it. Although, it does not change the fact that there were indeed
+							rises of tweets during the span of Duterte's term.
+						</p>
+						<h4><a href="#">References</a></h4>
+						<ol>
+							<li id="ref-1">
+								Welle, D. (2018, January 16). Duterte lashes out over Rappler shutdown. Deutsche Welle. 
+								<a href="https://www.dw.com/en/philippine-president-duterte-lashes-out-over-rappler-news-site-shutdown/a-42171069">
+									https://www.dw.com/en/philippine-president-duterte-lashes-out-over-rappler-news-site-shutdown/a-42171069
+								</a>
+							</li>
+							<li id="ref-2">
+								Conde, C. (2019). Politically Motivated Arrest of Philippine Journalist. Human Rights Watch.
+								<a href="https://www.hrw.org/news/2019/02/13/politically-motivated-arrest-philippine-journalist">
+									https://www.hrw.org/news/2019/02/13/politically-motivated-arrest-philippine-journalist
+								</a>
+							</li>
+							<li id="ref-3">
+								Bramesco, C. (2020). A Thousand Cuts: inside a chilling documentary on Maria Ressa. The Guardian.
+								<a href="https://www.theguardian.com/film/2020/aug/06/a-thousand-cuts-documentary-maria-ressa-philippines">
+									https://www.theguardian.com/film/2020/aug/06/a-thousand-cuts-documentary-maria-ressa-philippines
+								</a>
+							</li>
+							<li id="ref-4">
+								Nobel Prize. (2021). Maria Ressa - Facts - 2021.
+								<a href="https://www.nobelprize.org/prizes/peace/2021/ressa/facts/">
+									https://www.nobelprize.org/prizes/peace/2021/ressa/facts/
+								</a>
+							</li>
+							<li id="ref-5">
+								Wang, P. & Regan, H. (2022). Philippines orders news site Rappler to shut down, founder Maria Ressa says. CNN.
+								<a href="https://edition.cnn.com/2022/06/28/media/rappler-shut-down-philippines-ressa-intl-hnk/index.html">
+									https://edition.cnn.com/2022/06/28/media/rappler-shut-down-philippines-ressa-intl-hnk/index.html
+								</a>
+							</li>
+						</ol>
 					</article>
 				</div>
-				<div class="col-6 col-6-medium col-12-small">
-					<article class="box style2">
+				<div class="col-12">
+					<article class="box style2 text-align-left">
 						<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-						<h3><a href="#">Results</a></h3>
-						<p>Ornare nulla proin odio consequat.</p>
+						<h3><a href="#">Conclusion</a></h3>
+						<br>
+						<p>
+							From the results, the group can conclude that there were rising trends observed that coincided with peaks in 
+							misinformation allegations against Maria Ressa and Rappler throughout the Duterte's presidency. Furthermore, 
+							these events were identified through NLP and online research as directly or indirectly involving Duterte and his administration. 
+						</p>
+
+						<p>
+							For future work, other researchers can opt to find alternative statistical models that can best fit the data and/or increase 
+							the sample size of tweets, as no relationship could be confidently established using linear regression for a majority of the 
+							data segments. 
+						</p>
 					</article>
 				</div>
 			</div>
-			<footer>
-				<p>Want to learn more? Take a look at our source codes.</p>
-				<a href="#contact" class="button large scrolly">Github Repo</a>
-			</footer>
 		</div>
 	</article>
 
 	<!-- Team -->
 	<article id="team" class="wrapper style4">
 		<div class="container medium">
-			<header>
+			<header class="text-align-left">
 				<h2>We'd like to hear from you.</h2>
-				<p>You can add more information about the team members here.</p>
+				<p>Contact us!</p>
 			</header>
 			<div class="row">
-				<div class="col-12">
-					<form method="post" action="#">
-						<div class="row">
-							<div class="col-6 col-12-small">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-small">
-								<input type="text" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<input type="text" name="subject" id="subject" placeholder="Subject" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-									<li><input type="reset" value="Clear Form" class="alt" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
+				<div class="col-6">
+					<h3 class="text-align-left margin-0"><a href="#">Samuel Kirby Aguilar</a></h3>
+					<div>
+						<ul>
+							<li class="text-align-left">Email: shaguilar@up.edu.ph</li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-12">
-					<hr />
-					<h3>Find me on ...</h3>
-					<ul class="social">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-					</ul>
-					<hr />
+				<div class="col-6">
+					<h3 class="text-align-left margin-0"><a href="#">Denver Judal</a></h3>
+					<div>
+						<ul>
+							<li class="text-align-left">Email: ddjudal@up.edu.ph</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<h3 class="text-align-left margin-0"><a href="#">Ryosuke Nakano</a></h3>
+					<div>
+						<ul>
+							<li class="text-align-left">Email: rsnakano@up.edu.ph</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<footer>
 				<ul id="copyright">
-					<li>&copy; Untitled. All rights reserved.</li>
+					<!-- <li>&copy; Untitled. All rights reserved.</li> -->
 					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</footer>
